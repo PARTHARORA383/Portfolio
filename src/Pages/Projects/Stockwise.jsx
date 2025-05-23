@@ -43,11 +43,11 @@ const playClickSound = () => {
 
   )}
 </AnimatePresence>
-  <div>
-    <div className="flex flex-col items-start mt-30">
+  <div className="ml-1.5 mr-1.5">
+    <div className="flex flex-col items-start mt-12 lg:mt-20 ">
 
       <div className=" flex">
-        <div className="text-3xl lg:text-4xl font-medium ">
+        <div className="text-2xl lg:text-3xl font-medium">
           Stockwise
         </div>
         <div className=" flex justify-center items-center gap-4">
@@ -73,7 +73,7 @@ const playClickSound = () => {
         </div>
 
       </div>
-      <div className=" text-2xl lg:text-2xl mt-2 leading-relaxed text-neutral-400">Inventory Manegement application  </div>
+      <div className=" text-xl lg:text-2xl lg:mt-2 leading-relaxed text-neutral-400">Inventory Manegement application  </div>
     </div>
 
     {
@@ -94,12 +94,12 @@ const playClickSound = () => {
       //About
     }
     <div className=" flex flex-col items-start mt-8">
-      <div className="text-xl lg:text-2xl font-semibold ">ABOUT</div>
-      <div className="text-start  text-xl lg:text-2xl mt-7 text-neutral-400">Engineered a web platform for <span className="font-semibold text-neutral-100">
+      <div className="text-lg lg:text-xl font-semibold ">ABOUT</div>
+      <div className="text-start  text-lg lg:text-xl mt-7 text-neutral-400">Engineered a web platform for <span className="font-semibold text-neutral-100">
         stock tracking, sales logging, and expense analysis
       </span> to
         optimize inventory operations.</div>
-      <div className="text-start text-xl lg:text-2xl mt-1 text-neutral-400">
+      <div className="text-start text-lg lg:text-xl mt-1 text-neutral-400">
         Cater to the needs of Manufacturers for their Inventory Management and <p>
           Everyday Sales Tracking
         </p>
@@ -111,7 +111,7 @@ const playClickSound = () => {
     }
 
     <div className="flex flex-col items-start mt-10">
-      <div className="text-2xl font-semibold">
+      <div className="text-xl font-semibold">
         SYSTEM ARCHITECTURE
       </div>
       <div className="text-xl mt-7 text-neutral-300"> Let's talk about the high level architecture</div>
@@ -130,50 +130,50 @@ const playClickSound = () => {
 
 
           <div className="grid grid-cols-4">
-            <span className="text-start col-span-1 font-semibold text-lg lg:text-xl mr-2">User Interaction : </span>
-            <span className=" text-start col-span-3 text-lg lg:text-xl">  Users access the app via the React frontend and perform actions like logging in or managing inventory/sales/expenses.</span>
+            <span className="text-start col-span-1 font-semibold text-md lg:text-lg mr-2">User Interaction : </span>
+            <span className=" text-start col-span-3 text-md lg:text-lg">  Users access the app via the React frontend and perform actions like logging in or managing inventory/sales/expenses.</span>
           </div>
           <div className="grid grid-cols-4">
-            <span className="text-start col-span-1 font-semibold text-lg lg:text-xl mr-2">
+            <span className="text-start col-span-1 font-semibold text-md lg:text-lg mr-2">
               Authentication:
             </span>
-            <span className="text-start col-span-3 text-lg lg:text-xl">
+            <span className="text-start col-span-3 text-md lg:text-lg">
               React communicates with Firebase Auth to sign in or verify users.
             </span>
           </div>
 
           <div className="grid grid-cols-4">
-            <span className="text-start col-span-1 font-semibold text-lg lg:text-xl mr-2">
+            <span className="text-start col-span-1 font-semibold text-md lg:text-lg mr-2">
               Secure API Requests:
             </span>
-            <span className="text-start col-span-3 text-lg lg:text-xl">
+            <span className="text-start col-span-3 text-md lg:text-lg">
               Once authenticated, React includes the Firebase token in API requests to the Node.js/Express backend.
             </span>
           </div>
 
           <div className="grid grid-cols-4">
-            <span className="text-start col-span-1 font-semibold text-lg lg:text-xl mr-2">
+            <span className="text-start col-span-1 font-semibold text-md lg:text-lg mr-2">
               Backend Logic:
             </span>
-            <span className="text-start col-span-3 text-lg lg:text-xl">
+            <span className="text-start col-span-3 text-md lg:text-lg">
               Node.js verifies the token with Firebase, performs business logic, and interacts with MongoDB to fetch/update data.
             </span>
           </div>
 
           <div className="grid grid-cols-4">
-            <span className="text-start col-span-1 font-semibold text-lg lg:text-xl mr-2">
+            <span className="text-start col-span-1 font-semibold text-md lg:text-lg mr-2">
               Data Persistence:
             </span>
-            <span className="text-start col-span-3 text-lg lg:text-xl">
+            <span className="text-start col-span-3 text-md lg:text-lg">
               All inventory, sales, and expense records are stored in MongoDB collections.
             </span>
           </div>
 
           <div className="grid grid-cols-4">
-            <span className="text-start col-span-1 font-semibold text-lg lg:text-xl mr-2">
+            <span className="text-start col-span-1 font-semibold text-md lg:text-lg mr-2">
               UI Updates:
             </span>
-            <span className="text-start col-span-3 text-lg lg:text-xl">
+            <span className="text-start col-span-3 text-md lg:text-lg">
               The backend returns data to React, which updates the UI accordingly.
             </span>
           </div>
@@ -181,7 +181,7 @@ const playClickSound = () => {
       </div>
 
       <div className="mt-10 flex flex-col items-start ">
-          <div className="lg:text-xl text-neutral-300">
+          <div className="text-lg lg:text-xl text-neutral-300">
             Lets Dive in Deeper understanding feature structure and their functionalities
             </div>
 
@@ -190,7 +190,7 @@ const playClickSound = () => {
         SALES ARCHITECTURE
         </div>
 
-          <div className="text-lg lg:text-xl font-medium text-neutral-300 text-start mt-7">
+          <div className="text-lg lg:text-xl d text-neutral-300 text-start mt-7">
 
             The Sales feature on the website allows user to register their daily sales, logs sales and calculates total amount spend with search and filtering functionalities
           </div>

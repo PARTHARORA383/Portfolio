@@ -10,7 +10,7 @@ const Stockwise = () => {
 const navigate = useNavigate()
   return (
     <div>
-      <div
+      <div  
         className="rounded-2xl mt-10 flex flex-col items-start"
         ref={ref}
       >
@@ -30,7 +30,7 @@ const navigate = useNavigate()
           transition={{ duration: 0.6, ease: "easeOut" }}
         >
           <motion.p
-            className="text-2xl lg:text-3xl font-semibold"
+            className="text-lg lg:text-2xl font-semibold"
           >
             Stockwise : Inventory Management application  
             <a
@@ -42,7 +42,7 @@ const navigate = useNavigate()
               →
             </a>
           </motion.p>
-          <p className="text-xl lg:text-2xl text-start mt-1">
+          <p className="text-lg lg:text-xl text-start mt-1">
             A web platform for stock tracking, sales logging,
             and expense analysis to optimize <br />
             inventory operations.

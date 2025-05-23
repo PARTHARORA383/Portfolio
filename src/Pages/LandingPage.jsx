@@ -48,10 +48,10 @@ useEffect(() => {
 
 
      
-      <div className="text-lg lg:text-xl text-neutral-200 mt-12 ml-2">
+      <div className="text-md lg:text-lg text-neutral-200 mt-12 ml-2">
         Hey there , I am
       </div>
-      <div className=" text-5xl lg:text-6xl font-semibold mt-1">
+      <div className=" text-4xl lg:text-5xl font-semibold mt-1">
         Parth Arora
       </div>
 
@@ -59,14 +59,14 @@ useEffect(() => {
 
    
 
-      <div className=" text-xl lg:text-2xl text-start text-neutral-300 leading-normal mt-5">
+      <div className=" text-lg lg:text-xl text-start text-neutral-300 leading-normal mt-5">
         Frontend-focused developer with a passion
         for backend  <br />architecture and product experience
       </div>
     {
       //Add an onclick to email here 
     }
-      <div className=" rounded-md  py-1.5  px-20 hover:bg-gradient-to-tl bg-gradient-to-br text-lg lg:text-xl font-medium from-neutral-700 to-neutral-900 transition-transform duration-500 ease-in cursor-pointer mt-8">
+      <div className=" rounded-md  py-1.5  px-16 lg:px-20 hover:bg-gradient-to-tl bg-gradient-to-br text-sm lg:text-md font-medium from-neutral-700 to-neutral-900 transition-transform duration-500 ease-in cursor-pointer mt-8">
         Hire Me
       </div>
 
@@ -75,7 +75,7 @@ useEffect(() => {
 
       <div className="text-start">
 
-        <div className=" text-xl lg:text-2xl text-neutral-300 mt-16">Explore Projects</div>
+        <div className=" text-lg lg:text-xl text-neutral-300 mt-16">Explore Projects</div>
         
         <Stockwise/>
       </div>

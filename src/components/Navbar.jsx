@@ -19,7 +19,7 @@ const Navbar = () => {
       initial={{ x: -100, opacity: 0 }}
       animate={{ x: 0, opacity: 1 }}
       transition={{ duration: 0.5, ease: "easeOut" }}
-      className="hidden lg:flex fixed top-1/3 left-6 w-[78px] bg-gradient-to-b from-neutral-700 to-neutral-800 shadow-xl flex-col items-center justify-center rounded-full py-6 z-50"
+      className="hidden lg:flex fixed top-1/3 left-6 w-[70px] bg-gradient-to-b from-neutral-700 to-neutral-800 shadow-xl flex-col items-center justify-center rounded-full py-6 z-50"
     >
       {navItems.map((item, idx) => {
         const Icon = item.icon;
@@ -44,7 +44,7 @@ const Navbar = () => {
             ></motion.div>
 
             {/* Icon */}
-            <Icon size={26} className="text-white z-10" />
+            <Icon size={23} className="text-white z-10" />
 
             {/* Text label on hover */}
             <motion.div
@@ -54,7 +54,7 @@ const Navbar = () => {
                 x: hovered === idx ? 10 : 0,
               }}
               transition={{ duration: 0.3 }}
-              className="absolute left-[70px] text-white bg-neutral-900 px-4 py-1 rounded-md text-xl whitespace-nowrap z-10"
+              className="absolute left-[70px] text-white bg-neutral-900 px-4  rounded-md text-lg whitespace-nowrap z-10"
             >
               {item.label}
             </motion.div>
