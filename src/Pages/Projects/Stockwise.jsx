@@ -119,7 +119,7 @@ const playClickSound = () => {
       <div className="  hover:opacity-85 transition-transform duration-500 cursor-pointer mt-8 "
       >
 
-        <img src="/Images/hld_stockwise.png" className="rounded-lg" onClick={()=>{
+        <img src="/Images/hld_stockwise.png" className=" w-full max-w-full rounded-lg" onClick={()=>{
           handleclick("/Images/hld_stockwise.png" )
         }}/>
       </div>
@@ -195,7 +195,7 @@ const playClickSound = () => {
             The Sales feature on the website allows user to register their daily sales, logs sales and calculates total amount spend with search and filtering functionalities
           </div>
 
-            <img src="/Images/stockwise_sales.png" className="mt-7 rounded-lg" 
+            <img src="/Images/stockwise_sales.png" className="mt-7 rounded-lg w-full max-w-full" 
             onClick={()=>{handleclick("/Images/stockwise_sales.png")}}/>
 
 
@@ -223,8 +223,9 @@ const playClickSound = () => {
   <div className="text-lg lg:text-xl text-neutral-300 mt-2">
     The backend handles POST requests from the frontend. It validates inputs and stores the sales records in MongoDB, including auto-generated timestamps.
   </div>
-
-        <pre className="bg-neutral-800 text-red-300 text-sm lg:text-lg rounded-lg p-3 mt-2 w-full overflow-x-auto">
+        <div  className="w-full overflow-x-auto rounded-lg mt-2">
+        <pre className="bg-neutral-800 text-red-300 text-sm lg:text-lg p-3 min-w-[300px] whitespace-pre-wrap break-words">
+          
 {`// POST /:uid/:companyid
 // → Creates a new sale entry
 router.post('/:uid/:companyid', async (req, res) => { ... });
@@ -242,6 +243,7 @@ router.put('/:uid/:companyid/:id', async (req, res) => { ... });
 router.delete('/:uid/:companyid/:id', async (req, res) => { ... });
 `}
 </pre>
+</div>
 
 
   <div className="text-xl lg:text-2xl font-semibold mt-8">
@@ -250,7 +252,9 @@ router.delete('/:uid/:companyid/:id', async (req, res) => { ... });
   <div className="text-lg lg:text-xl text-neutral-300 mt-2">
     Sales are stored in a Mongoose schema containing item name, quantity, rate, GST, and calculated total. Each entry has a creation timestamp.
   </div>
-  <pre className="bg-neutral-800 text-red-300 text-sm lg:text-lg rounded-lg p-3 mt-2 w-full overflow-x-auto">
+ <div  className="w-full overflow-x-auto rounded-lg mt-2">
+
+  <pre className="bg-neutral-800 text-red-300 text-sm lg:text-lg p-3 min-w-[300px] whitespace-pre-wrap break-words">
     {`const saleSchema = new mongoose.Schema({
   item: String,
   quantity: Number,
@@ -260,9 +264,10 @@ router.delete('/:uid/:companyid/:id', async (req, res) => { ... });
   createdAt: {
     type: Date,
     default: Date.now,
-  }
-});`}
+    }
+    });`}
   </pre>
+    </div>
 
 
   
