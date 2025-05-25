@@ -2,25 +2,22 @@
 import ZoomableImage from "../../components/ZoomImage";
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "motion/react"
-<<<<<<< HEAD
-=======
+
 import Loader from "../../components/loader";
->>>>>>> master
 
 const StockWise = () => {
 
   const [showvisit, setShowvisit] = useState(false);
   const [selectedImage ,setSelectedImage] = useState(null);
-<<<<<<< HEAD
+
 const [showloader , setShowloader] = useState(true);
-=======
-  const [showloader , setShowloader] = useState(true);
->>>>>>> master
+ 
+
 
   const handleclick = (src)=>{
     setSelectedImage(src)
   }
-<<<<<<< HEAD
+
 const playClickSound = () => {
   const clickAudio = new Audio('/sounds/camera-shutter.mp3');
   clickAudio.volume = 0.5; // optional: lower volume
@@ -29,8 +26,7 @@ const playClickSound = () => {
     console.warn("Audio play failed:", err);
   });
 };
-=======
->>>>>>> master
+
   useEffect(() => {
     const timeout = setTimeout(() => {
       setShowloader(false);
@@ -42,25 +38,11 @@ const playClickSound = () => {
   return<> 
   <AnimatePresence>
   {showloader && (
-<<<<<<< HEAD
-<motion.div
-  key="loader"
-  initial={{ y: "100%" }}
-  animate={{ y: 0 }}
-  exit={{ y: "-100%" }}
-  transition={{ duration: 0.5, ease: "easeInOut" }}
-  onAnimationStart={() => playClickSound()}
-  className="z-50 fixed inset-0 bg-amber-50 h-screen w-screen"
-/>
-
-  )}
-</AnimatePresence>
-=======
     <Loader/>
   )}
   </AnimatePresence>
 
->>>>>>> master
+
   <div className="ml-1.5 mr-1.5">
     <div className="flex flex-col items-start mt-12 lg:mt-20 ">
 
