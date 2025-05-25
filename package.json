@@ -10,16 +10,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-<<<<<<< HEAD
-    "@tailwindcss/vite": "^4.1.7",
-    "framer-motion": "^12.12.1",
-    "lucide-react": "^0.511.0",
-    "motion": "^12.12.1",
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0",
-    "react-icons": "^5.5.0",
-    "react-router-dom": "^7.6.0",
-=======
     "@emailjs/browser": "^4.4.1",
     "@tailwindcss/vite": "^4.1.7",
     "axios": "^1.9.0",
@@ -33,7 +23,6 @@
     "react-dom": "^19.1.0",
     "react-icons": "^5.5.0",
     "react-router-dom": "^7.6.1",
->>>>>>> master
     "tailwindcss": "^4.1.7",
     "yet-another-react-lightbox": "^3.23.2"
   },
