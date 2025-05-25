@@ -7,7 +7,11 @@ const navItems = [
   { label: "Home", icon: Home, path: "/" },
   { label: "Projects", icon: Folder, path: "/Project/Stockwise" },
   { label: "Blogs", icon: BookOpen, path: null },
+<<<<<<< HEAD
   { label: "Contact", icon: Mail, path: null },
+=======
+  { label: "Contact", icon: Mail, path: "/Contactus" },
+>>>>>>> master
 ];
 
 const Navbar = () => {

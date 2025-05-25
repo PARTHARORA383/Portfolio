@@ -8,6 +8,10 @@ import RollingTextFullScreen from './components/RolllingText'
 import {BrowserRouter , Routes , Route} from 'react-router-dom'
 import StockWise from './Pages/Projects/Stockwise'
 import Navbar from './components/Navbar'
+<<<<<<< HEAD
+=======
+import Contact from './Pages/Contact'
+>>>>>>> master
 
 
 function App() {
@@ -27,7 +31,12 @@ function App() {
    <Navbar/>
       <Routes>
       <Route path = '/' element = { <LandingPage/>} />
+<<<<<<< HEAD
       <Route path = '/Project/StockWise' element = { <StockWise/>} />
+=======
+      <Route path = '/Project/StockWise' element = { <StockWise/>} /> 
+      <Route path = '/Contactus' element = { <Contact/>} /> 
+>>>>>>> master
 
      
     
