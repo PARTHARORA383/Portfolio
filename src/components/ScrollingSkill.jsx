@@ -1,7 +1,7 @@
 'use client';
 
 import { animate, motion, useMotionValue } from 'framer-motion';
-import { ReactNode, useEffect } from 'react';
+import {  useEffect } from 'react';
 import {
   SiReact,
   SiTailwindcss,
