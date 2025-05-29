@@ -1,12 +1,13 @@
 
-import { useSearchParams } from "react-router-dom";
+import { useNavigate, useSearchParams } from "react-router-dom";
 import Stockwise from "../components/Stockwise";
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "motion/react"
 import BentoGrid from "../components/Bentogrid";
+import Slay from "../components/Slay";
 
 const LandingPage = () => {
-
+const navigate = useNavigate()
 const [showloader , setShowloader] = useState(true);
 const [show , setShow] = useState(true);
 
@@ -67,7 +68,9 @@ useEffect(() => {
     {
       //Add an onclick to email here 
     }
-      <div className=" rounded-md  py-1.5  px-16 lg:px-20 hover:bg-gradient-to-tl bg-gradient-to-br text-sm lg:text-md font-medium from-neutral-700 to-neutral-900 transition-transform duration-500 ease-in cursor-pointer mt-8">
+      <div className=" rounded-md  py-1.5  px-16 lg:px-20 hover:bg-gradient-to-tl bg-gradient-to-br text-sm lg:text-md font-medium from-neutral-700 to-neutral-900 transition-transform duration-500 ease-in cursor-pointer mt-8" onClick={()=>{
+        navigate('/Contactus')
+      }}>
         Hire Me
       </div>
 
@@ -77,7 +80,7 @@ useEffect(() => {
       <div className="text-start">
 
         <div className=" text-lg lg:text-xl text-neutral-300 mt-16">Explore Projects</div>
-        
+        <Slay/>
         <Stockwise/>
       </div>
 

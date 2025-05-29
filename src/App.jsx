@@ -11,6 +11,7 @@ import Navbar from './components/Navbar'
 
 
 import Contact from './Pages/Contact'
+import ProjectPage from './Pages/Projects/Projectpage'
 
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
       <Route path = '/' element = { <LandingPage/>} />
       <Route path = '/Project/StockWise' element = { <StockWise/>} />
 
+      <Route path = '/Projects' element = { <ProjectPage/>} /> 
       <Route path = '/Project/StockWise' element = { <StockWise/>} /> 
       <Route path = '/Contactus' element = { <Contact/>} /> 
 
