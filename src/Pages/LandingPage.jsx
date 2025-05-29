@@ -3,6 +3,7 @@ import { useSearchParams } from "react-router-dom";
 import Stockwise from "../components/Stockwise";
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "motion/react"
+import BentoGrid from "../components/Bentogrid";
 
 const LandingPage = () => {
 
@@ -79,6 +80,9 @@ useEffect(() => {
         
         <Stockwise/>
       </div>
+
+
+      <BentoGrid/>
 
   </div>
 }

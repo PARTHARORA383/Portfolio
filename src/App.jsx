@@ -23,7 +23,7 @@ function App() {
 
 
 
-    <div className='  flex flex-col lg:items-start w-full lg:w-1/2 mt-14 ml-4 mr-4 lg:m-0 '>
+    <div className='  flex flex-col lg:items-start w-full lg:ml-60 lg:mr-60 mt-14 ml-4 mr-4 lg:m-0 '>
       <TopBar/>
 
       <BrowserRouter>
